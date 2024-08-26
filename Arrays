@@ -1,0 +1,19 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Array{
+public static void main(String[]args){
+int i,index;
+Scanner sc=new Scanner(System.in);
+int a[]=new int[4];
+System.out.println("Enter the number : ");
+for(i=0;i<a.length;i++)
+a[i]=sc.nextInt();
+System.out.println("Enter the index : ");
+index=sc.nextInt();
+for(i=index;i<a.length-1;i++)
+a[i]=a[i+1];
+System.out.println("After delete ");
+for(i=0;i<a.length-1;i++)
+System.out.println(a[i]);
+}
+}
